@@ -1,0 +1,12 @@
+body{
+    background-image: url('../img/back-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.centra-x-y .row{
+    max-width:430px;
+}

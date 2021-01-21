@@ -1,0 +1,220 @@
+:root{
+    --cor_azul1:rgba(0, 140, 255, 0.507);
+}
+/* @font-face{
+    src: url('../fonts/bubblegum-sans-regular.otf');
+    font-family: 'font1';
+} */
+@font-face{
+    src: url('../fonts/comic.otf');
+    font-family: 'font2';
+}
+/* @font-face{
+    src: url('../fonts/LobsterTwo-Regular.ttf');
+    font-family: 'font3';
+}
+@font-face{
+    src: url('../fonts/PortLligatSans-Regular.ttf');
+    font-family: 'font4';
+}
+@font-face{
+    src: url('../fonts/krinsker.ttf');
+    font-family: 'font5';
+}
+@font-face{
+    src: url('../fonts');
+    font-family: 'font6';
+} */
+body{
+    overflow-x: hidden;
+}
+
+
+/* ESTILOS GERAIS */
+.centra-x-y{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+main > .row{
+    position: relative;
+    top:-80px;
+    opacity:0;
+    width:100%;
+    transition: all .7s ease-in-out;
+}
+main > .row.ativo{
+    top:0px;
+    opacity:1;
+}
+.text-size-2{
+    font-size:1.2em;
+}
+.btn{
+    outline: none !important;
+}
+.btn1{
+    padding:8px 25px;
+    font-size:1em;
+    background-image: linear-gradient(122deg,rgb(20, 114, 236),rgb(0, 76, 138));
+}
+.btn1:hover{
+    transform: scale(1.01);
+}
+.btn1:active{
+    transform: scale(1.03);
+}
+.form h1{
+    font-family: 'font2' , cursive;
+    text-shadow: 2px 2px 3px #000;
+    margin-bottom:20px;
+}
+.form-control{
+    background-color: rgba(0, 0, 0, 0.479);
+    padding:19px 10px;
+    color: white;
+}
+.form-control:hover {
+    background-color: rgba(0, 0, 0, 0.596);
+}
+.form-control::placeholder{
+    color: rgba(255, 255, 255, 0.774);
+}
+footer.bg-light{
+    background-color: rgba(0, 0, 0, 0.562) !important;
+}
+span.input-group-addon{
+    background-color:var(--cor_azul1);
+    color: white !important;
+}
+
+footer{
+    height:0px;
+    opacity:0;
+    overflow: hidden;
+    transition: all .9s ease-out;
+}
+footer.ativo{
+    height:auto;
+    opacity:1;
+}
+
+/* -------------------DROPDOWNS----------------------- */
+.dropdown-menu{
+    background-color: var(--cor_azul1);
+    background-image: linear-gradient(100deg,var(--cor_azul1),rgb(0, 68, 255));
+}
+.dropdown-menu li .fa{
+    float: right;
+    opacity: 0;
+}
+.dropdown-menu li:hover .fa{
+    opacity: 1;
+}
+
+.dropdown-menu a{
+    color: white !important;
+}
+.dropdown-menu li:hover a{
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+/* MODAL */
+.modal-header{
+    position: relative;
+}
+.modal-header h3{
+    font-family: 'font2';
+}
+.modal-header .close{
+    padding:0px;
+    position: absolute;
+    top:10px;
+    color:white;
+    right:10px;
+}
+.modal-header .close:hover{
+    color:red;
+}
+.modal1 .modal-content{
+    background-color: rgba(0, 0, 0, 0.705);
+    width:100%;
+    margin: 0 auto;
+    max-width:400px;
+}
+.modal1 .modal-body{
+    position: relative;
+}
+.modal1 button{
+    position: absolute;
+    bottom:10px;
+    right:20px;
+}
+
+.msg{
+    position:fixed;
+    top:0px;
+    right:-100%;
+    max-width:280px;
+    color:white;
+    font-size:13px;
+    font-weight:600;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgba(0, 0, 0, 0.603);
+    transition: all .8s ease-out;
+    z-index:99999999999;
+}
+.msg .titulo{
+    font-size:15px;
+    display: block;
+    padding:4px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+.msg p{
+    padding:8px 12px;
+}
+.msg.ativo{
+    right:8px;
+}
+.msg.erro{
+    background-color: rgba(255, 0, 0, 0.473);
+}
+.msg.certo{
+    background-color: rgba(0, 255, 34, 0.377);
+}
+
+/*  SPINNER e LOADING */
+.loading{
+    position: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width:100vw !important;
+    height:100vh !important;
+    opacity:0;
+    z-index:-1;
+    transition: all .5s ease-in-out;
+}
+.loading.ativo{
+    opacity:1;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index:9999999999999;
+}
+.loading p{
+    font-size:11px;
+}
+.spinner{
+    width:30px;
+    height:30px;
+}
+.logo_chimbanda{
+    position: absolute;
+    top:5px;
+    right:5px;
+    width:70px;
+    height: 70px;
+    z-index:3;
+}

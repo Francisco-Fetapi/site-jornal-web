@@ -1,0 +1,42 @@
+body{
+    background-image: url('../img/back-criar-conta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+form{
+    margin-bottom:60px;
+}
+form legend{
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px #000;
+    padding:8px;
+    border-bottom: 2px solid #fff;
+}
+#genero{
+    cursor: default;
+    text-align: left;
+}
+.fieldset{
+    text-align: center;
+    font-family: 'font2';
+    font-size:1.3em;
+    padding-bottom:9px;
+    border-bottom:1px solid white;
+    margin-bottom:15px;
+}
+.aluno , .professor{
+    height:0px;
+    opacity:0;
+    overflow: hidden;
+    transition: all .5s ease-out;
+}
+.aluno.ativo , .professor.ativo{
+    height: auto;
+}
+.modal-body{
+    overflow: auto;
+}

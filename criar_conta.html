@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="./public/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/lib/bootstrap/css/bootstrap3+++4.css">
+    <link rel="stylesheet" href="./public/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/criar_conta.css">
+    <link rel="shortcut icon" href="./public/img/logo-chimbanda.png"/>
+</head>
+
+<body>
+    <img class="logo_chimbanda" src="./public/img/logo-chimbanda.png" alt="">
+    <div class='loading text-center'>
+        <div class='spinner text-primary spinner-border'></div>
+        <p>Aguarde</p>
+    </div>
+    
+    <main class="container centra-x-y form">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center">Criar conta</h1>
+            </div>
+            <div class="col-xs-12">
+                <form action="" class="form1 row p-2">
+
+                    <fieldset class="col-xs-12 col-sm-6">
+                        <legend>Informações Pessoais <span class="fa fa-user float-right"></span></legend>
+                        <div class="form-group"> 
+                            <label for="nome">Nome</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                </span> 
+                                <input type="text" id="nome" class="form-control" id="" placeholder="Seu nome" > 
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="dataNasc" class="control-label">Data de nascimento:</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <span class="fa fa-calendar-times-o font-weight-bold"></span>
+                                </span> 
+                                <input type="date" id="dataNasc" class="form-control" id="" placeholder="Senha" > 
+                            </div>
+                        </div> 
+                        <div class="form-group"> 
+                            <label for="genero">Genero</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon"> 
+                                    <span class="fa fa-transgender"></span>
+                                </span>
+                             <input value="Masculino" id="genero" class="form-control dropdown-toggle" data-toggle="dropdown" >
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Masculino<span class="fa fa-mars"></span></a></li>
+                                        <li><a href="#">Feminino<span class="fa fa-venus"></span></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="col-xs-12 col-sm-6">
+                        <legend>Informações de acesso <span class="glyphicon glyphicon-lock float-right"></span></legend>
+                        <div class="form-group"> 
+                            <label for="senha">Senha</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <span class="fa fa-key font-weight-bold"></span>
+                                </span> 
+                                <input type="password" id="senha" class="form-control" id="" placeholder="No minimo 6 digitos" > 
+                            </div>
+                        </div>
+                        
+                        <div class="form-group"> 
+                            <label for="email">Email</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon text-dark font-weight-bold">
+                                    @
+                                </span> 
+                                <input type="text" id="email" class="form-control" id="" placeholder="Email" > 
+                            </div>
+                        </div>  
+                        <div class="form-group"> 
+                            <label for="numId">Nº de Identificação</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon text-dark font-weight-bold">
+                                    <span class="fa fa-magic"></span>
+                                </span> 
+                                <input type="number" id="numId" maxlength="9" class="form-control" placeholder="tem de ter 9 digitos" > 
+                            </div>
+                        </div>  
+                        <button type="submit" class="btn btn-primary btn1 float-right">Criar conta</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="shadow-lg font-weight-bold fixed-bottom bg-light text-white text-center p-1">
+        <p>Já tens uma conta? <a href="./login.html">Entre na sua conta</a></p>
+    </footer>
+
+
+    <div class="modal modal1 fade" id="formModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <h3 class="modal-title p-3 text-center">Informações Adicionais</h3>
+                    <span class="close" data-dismiss="modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group"> 
+                            <label for="confSenha">Confirmar Senha</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <span class="fa fa-key font-weight-bold"></span>
+                                </span> 
+                                <input type="password" id="confSenha" class="form-control" id="" placeholder="confirmar senha" > 
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="quem">Quem es?</label> 
+                            <div class="input-group dropup"> 
+                                <span class="input-group-addon"> 
+                                    <span class="fa fa-user"></span>
+                                </span>
+                             <input name="" id="quem" list="listQuem" class="form-control">
+                                    <datalist id="listQuem">
+                                       <!-- Aqui vai aparecer os tipos de usuario dinamicamente --> 
+                                    </datalist>
+                            </div>
+                        </div>
+
+                        <fieldset class="aluno">
+                            <div class="fieldset">Informações do Aluno</div>
+                            <div class="form-group"> 
+                                <label for="curso">Curso</label> 
+                                <div class="input-group"> 
+                                    <span class="input-group-addon"> 
+                                        <span class="fa fa-university"></span>
+                                    </span>
+                                 <input name="" list="cursos" id="curso" class="form-control">
+                                    <datalist id="cursos">
+                                        <!-- Aqui vai aparecer os cursos dinamicamente -->
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="periodo">Periodo</label> 
+                                <div class="input-group dropup"> 
+                                    <span class="input-group-addon"> 
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                        <input list="periodos" id="periodo" class="form-control">
+                                        <datalist id="periodos">
+                                            <!-- Aqui vai aparecer os periodos dinamicamente -->
+                                        </datalist>
+                                </div>
+                            </div>
+                            <div class="form-group"> 
+                                <label for="classe">Classe</label> 
+                                <div class="input-group dropup"> 
+                                    <span class="input-group-addon"> 
+                                        <span class="fa fa-bars"></span>
+                                    </span>
+                                        <input list="classes" id="classe" class="form-control dropdown-toggle" data-toggle="dropdown" >
+                                        <datalist id="classes">
+                                           <!-- Aqui vai aparecer as classes dinamicamente -->
+                                        </datalist>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="professor">
+                            <div class="fieldset">Informações do Professor</div>
+                            <div class="form-group"> 
+                                <label for="disciplina">Disciplina</label> 
+                                <div class="input-group dropup"> 
+                                    <span class="input-group-addon"> 
+                                        <span class="fa fa-leanpub"></span>
+                                    </span>
+                                    
+                                 <input name="" list="disciplinas" id="disciplina" class="form-control">
+                                    
+                                 <datalist id="disciplinas">
+                                    <!-- Aqui vai aparecer as disciplinas dinamicamente -->                                                                              
+                                </datalist>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                        <button type="submit" class="btn btn-primary btn1">Concluido <span class="glyphicon glyphicon-ok"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="msg">
+        <span class="titulo">
+            Titulo da Mensagem
+        </span>
+        <p>
+            
+        </p>
+    </div>
+
+    <script src="./public/lib/bootstrap/js/jquery.js"></script>
+    <script src="./public/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./public/js/funcoes.js"></script>
+    <script src="./public/js/constantes.js"></script>
+    <script src="./public/js/script.js"></script>
+
+    <script>
+        //para debug
+        function preencheTudo(){
+            $('#nome').val('Francisco Fetapi');
+            $('#dataNasc').val('2002-11-10');
+            $('#genero').val('Masculino');
+            $('#senha').val('111111');
+            $('#confSenha').val('111111');
+            $('#email').val('email@gmail.com');
+            $('#numId').val('123456719');
+            $('#quem').val('Aluno');
+
+            $('#periodo').val('Manha');
+            $('#classe').val('10ª');
+            $('#curso').val('Estatistica');
+
+            
+        }
+        //  preencheTudo();
+        //  $('#formModal').modal('show');
+    </script>
+    <script src="./public/js/criar_conta.js"></script>
+</body>
+
+</html>

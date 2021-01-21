@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./public/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/lib/bootstrap/css/bootstrap3+++4.css">
+    <link rel="stylesheet" href="./public/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/login.css">
+    <link rel="shortcut icon" href="./public/img/logo-chimbanda.png"/>
+</head>
+
+<body>
+    <img class="logo_chimbanda" src="./public/img/logo-chimbanda.png" alt="">
+   <div class='loading text-center'>
+        <div class='spinner text-primary spinner-border'></div>
+        <p>Aguarde</p>
+    </div>
+
+    <div class="msg">
+        <span class="titulo">
+            Titulo da Mensagem
+        </span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi 
+        </p>
+    </div>
+
+    <main class="container centra-x-y form">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center">Entre na sua conta</h1>
+            </div>
+            <div class="col-xs-12">
+                <form action="" class="row p-2">
+                    <fieldset class="col-xs-12">
+                        <div class="form-group"> 
+                            <label for="numId">Nº de Identificação</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon text-dark font-weight-bold">
+                                    <span class="fa fa-magic"></span>
+                                </span> 
+                                <input type="number" id="numId" class="form-control" id="" placeholder="Nº de Identificação" > 
+                            </div>
+                        </div>
+                        <div class="form-group"> 
+                            <label for="senha">Senha</label> 
+                            <div class="input-group"> 
+                                <span class="input-group-addon">
+                                    <span class="fa fa-key font-weight-bold"></span>
+                                </span> 
+                                <input type="password" id="senha" class="form-control" id="" placeholder="6 digitos ou mais"> 
+                            </div>
+                        </div>  
+                        <button type="submit" class="btn btn-primary btn1 float-right">Entrar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="shadow-lg font-weight-bold fixed-bottom bg-light text-white text-center p-1">
+        <p>Ainda nao tens uma conta? <a href="./criar_conta.html">Criar conta</a></p>
+    </footer>
+    <script src="./public/lib/bootstrap/js/jquery.js"></script>
+    <script src="./public/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./public/js/funcoes.js"></script>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/login.js"></script>
+</body>
+
+</html>
