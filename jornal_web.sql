@@ -21,9 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `jornal_web`
 --
-CREATE DATABASE jornal_web;
-
-use jornal_web;
+CREATE DATABASE IF NOT EXISTS `jornal_web` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `jornal_web`;
 -- --------------------------------------------------------
 
 --
