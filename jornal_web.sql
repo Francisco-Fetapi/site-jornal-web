@@ -21,7 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `jornal_web`
 --
+CREATE DATABASE jornal_web;
 
+use jornal_web;
 -- --------------------------------------------------------
 
 --
