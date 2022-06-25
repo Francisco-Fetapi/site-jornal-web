@@ -23,3 +23,10 @@ Ao acessar o painel para importar um __banco de dados__ deve-se escolher o arqui
 
 Quase que ia me esquecendo: O projeto clonado deve ser movido para a pasta onde o endereço `http://localhost` aponta, no meu caso, já que estou usando o `XAMPP` o endereço é `C:\xampp\htdocs\site-jornal-web`. Depois da pasta ser movida para o local designado no passo anterior, ao acessar `http://localhost/site-jornal-web` acessaremos o sistema, como se segue nas imagens abaixo:
 
+![1](https://user-images.githubusercontent.com/74926014/175776086-11d6517c-9efd-44d4-8f83-e131d574bd1e.PNG)
+![2](https://user-images.githubusercontent.com/74926014/175776103-1359ccfe-0d5a-4455-8f34-205cb2556082.PNG)
+![3](https://user-images.githubusercontent.com/74926014/175776119-16e28d94-9039-443f-94ee-a38ff874ef40.PNG)
+
+##
+
+Se seguiu todos os passos acima já pode acessar o site <a href="http://localhost/site-jornal-web">clicando aqui</a>
