@@ -1,6 +1,6 @@
 # Jornal Web - Colégio Chimbanda
 
-Este é um site ficticio construido para _fins de estudo_ para gerenciar as noticias do **Colégio Chimbanda**.
+Este é um site ficticio construido para _fins de estudo_ para gerenciar as noticias do **Colégio Chimbanda**, foi criado nos finais de `dezembro de 2020` para exercitar o `PHP`, principlamente assuntos ligados a `arquitetura e POO`, hoje percebo que na época eu não entendia absolutamente NADA sobre nem um nem outro, é só ver o quanto a arquitetura e o código do projeto estão SUJOS😅, apesar de tudo não tenciono alterar nenhuma linha de código desse projeto, foram os meus primeiros passos na linguagem `PHP` e não quero apagá-los, quero puder vê-los e me divertir com isso sempre que quiser. "VER" A MINHA PRÓPRIA EVOLUÇÃO É FASCINANTE.❤
 
 # Pré-requisitos para rodar o sistema localmente
 Por ser um projeto ficticio não me preocupei em hospedá-la, mas caso queiras ver o projeto rodando, eis abaixo alguns elementos que precisar ter instalado em sua máquina.
