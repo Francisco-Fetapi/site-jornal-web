@@ -30,3 +30,18 @@ Quase que ia me esquecendo: O projeto clonado deve ser movido para a pasta onde 
 ##
 
 Se seguiu todos os passos acima já pode acessar o site <a href="http://localhost/site-jornal-web">clicando aqui</a>
+
+## Logar como Administrador
+Na pasta `model` tem o arquivo `Administrador.php` e lá tem as credenciais/informações do Administrador. Para logar no sistema como **administrador** basta inserir no campo `Nº de Identificação` e no campo `Senha` as informações declaradas no arquivo `Administrador.php`.
+
+```php
+  // [...]
+ public function __construct(){
+    $this->nome = 'Francisco Fetapi';
+    $this->numId = '943674398';
+    $this->senha = 'Fetapi';
+    $this->foto = "user.jpg";
+  }
+  // [...]
+```
+Por padrão as informações do ADM são as que estão acima.
