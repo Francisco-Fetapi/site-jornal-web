@@ -9,6 +9,12 @@
 
 Este é um site ficticio construido para _fins de estudo_ para gerenciar as noticias do **Colégio Chimbanda**, foi criado nos finais de `dezembro de 2020` para exercitar o `PHP`, principlamente assuntos ligados a `arquitetura e POO`, hoje percebo que na época eu não entendia absolutamente NADA sobre nem um nem outro, é só ver o quanto a arquitetura e o código do projeto estão SUJOS😅, apesar de tudo não tenciono alterar nenhuma linha de código desse projeto, foram os meus primeiros passos na linguagem `PHP` e não quero apagá-los, quero puder vê-los e me divertir com isso sempre que quiser. "VER" A MINHA PRÓPRIA EVOLUÇÃO É FASCINANTE.❤
 
+<br />
+<br />
+
+![jornal-web](https://user-images.githubusercontent.com/74926014/181221742-8a49b5b2-9d89-4bfb-a394-114db9efb8cd.gif)
+
+
 # Pré-requisitos para rodar o sistema localmente
 Por ser um projeto ficticio não me preocupei em hospedá-lo, mas caso queiras ver o projeto rodando, eis abaixo alguns elementos que precisas ter instalado em sua máquina.
 
@@ -28,11 +34,7 @@ Com o repositório clonado basta apenas importar o banco de dados com suas respe
 
 Ao acessar o painel para importar um __banco de dados__ deve-se escolher o arquivo com as instruções a serem executadas para criar o banco. Na raiz do projeto clonado temos o arquivo `jornal_web.sql`, é ele que contém todo o SQL que deve ser executado para criar o banco de dados e suas respetivas tabelas.
 
-Quase que ia me esquecendo: O projeto clonado deve ser movido para a pasta onde o endereço `http://localhost` aponta, no meu caso, já que estou usando o `XAMPP` o endereço é `C:\xampp\htdocs`. Depois da pasta ser movida para o local designado no passo anterior, ao acessar `http://localhost/site-jornal-web` acessaremos o sistema, como se segue nas imagens abaixo:
-
-![1](https://user-images.githubusercontent.com/74926014/175776086-11d6517c-9efd-44d4-8f83-e131d574bd1e.PNG)
-![2](https://user-images.githubusercontent.com/74926014/175776103-1359ccfe-0d5a-4455-8f34-205cb2556082.PNG)
-![3](https://user-images.githubusercontent.com/74926014/175776119-16e28d94-9039-443f-94ee-a38ff874ef40.PNG)
+Quase que ia me esquecendo: O projeto clonado deve ser movido para a pasta onde o endereço `http://localhost` aponta, no meu caso, já que estou usando o `XAMPP` o endereço é `C:\xampp\htdocs`. Depois da pasta ser movida para o local designado no passo anterior, ao acessar `http://localhost/site-jornal-web` o sistema será iniciado. 
 
 ##
 
